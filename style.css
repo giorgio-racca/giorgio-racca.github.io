@@ -11,7 +11,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: Helvetica, sans-serif;
-  line-height: 1.6;
+  line-height: 1.55;
   text-rendering: optimizeLegibility;
 }
 
@@ -58,14 +58,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 0 0.45rem;
-}
-
-.contact-list a + a::before {
-  content: "\00b7";
-  display: inline-block;
-  margin-right: 0.45rem;
-  text-decoration: none;
+  gap: 0 1.15rem;
 }
 
 .contact-list a {
@@ -138,7 +131,18 @@ ul {
 
 ol li + li,
 ul li + li {
-  margin-top: 0.75rem;
+  margin-top: 0.4rem;
+}
+
+section > h2 + * {
+  margin-top: -0.5rem;
+}
+
+section > h2 + ul,
+section > h2 + ol,
+section > p + ul,
+section > p + ol {
+  margin-top: -0.6rem;
 }
 
 @media (max-width: 520px) {
